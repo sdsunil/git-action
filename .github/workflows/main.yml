@@ -6,7 +6,7 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: sdsunil/git-action@v10
+      uses: sdsunil/git-action@v1
       with:
         issue-title: '12'
         repo-token: 'black'
