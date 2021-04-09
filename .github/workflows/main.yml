@@ -8,8 +8,8 @@ jobs:
       id: hello
       uses: actions/hello-world-javascript-action@v1.1
       with:
-        numOctocats: '12'
-        octocatEyeColor: 'black'
+        issue-title: '12'
+        repo-token: 'black'
     # Use the output from the `hello` step
     - name: Get the output sum
       run: echo "The sum was ${{ steps.hello.outputs }}"

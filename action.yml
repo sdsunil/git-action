@@ -1,18 +1,17 @@
-name: 'Hello India'
-description: 'Testing Input and Output'
+name: "I have issues"
+
+description: "consume the output of the previous action and create a new issue in the repository"
+
 inputs:
-  numOctocats:
-    description: 'Number of Octocats'
-    required: false
-    default: '1'
-  octocatEyeColor:
-    description: 'Eye color of the Octocats'
+  joke:
+    description: "This will become the body of the created issue"
+  issue-title:
+    description: "Every issue needs a title, it's nice to supply one, even though you could do this dynamically within your code"
+    default: "a joke for you"
     required: true
-outputs:
-  sum: # id of the output
-    description: 'The sum of the inputs'
-  sub: # id of the output
-    description: 'The sub of the inputs'
+  repo-token:
+    description: "Token with permissions to do repo things"
+
 runs:
-  using: 'node12'
-  main: 'index.js'
+  using: "node12"
+  main: "index.js"

@@ -3,10 +3,11 @@ const github = require('@actions/github');
 
 try {
   // `who-to-greet` input defined in action metadata file
-  const firstInp = core.getInput('numOctocats');
-  const secondInp = core.getInput('octocatEyeColor');
-  console.log(`My Hello ${firstInp}!`);
-  console.log(`My Hello ${secondInp}!`);
+  const issueTitle = core.getInput("issue-title");
+  const jokeBody = core.getInput("joke");
+  const token = core.getInput("repo-token");
+  console.log(`My Hello ${issueTitle}!`);
+  console.log(`My Hello ${jokeBody}!`);
   const sum = '12'
   core.setOutput("sum", sum);
   let sub ='1'
