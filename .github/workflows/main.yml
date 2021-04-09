@@ -1,0 +1,16 @@
+jobs:
+  hello_world_job:
+    runs-on: ubuntu-latest
+    name: A job to say my hello
+    steps:
+    - name: Hello world action step
+      id: hello
+      uses: actions/hello-world-javascript-action@v1.1
+      with:
+        numOctocats: '12'
+        octocatEyeColor: 'black'
+    # Use the output from the `hello` step
+    - name: Get the output sum
+      run: echo "The sum was ${{ steps.hello.outputs }}"
+    - name: Get the output sub
+      run: echo "The sub was ${{ steps.hello.outputs.sub }}"

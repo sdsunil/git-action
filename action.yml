@@ -1,0 +1,18 @@
+name: 'Hello India'
+description: 'Testing Input and Output'
+inputs:
+  numOctocats:
+    description: 'Number of Octocats'
+    required: false
+    default: '1'
+  octocatEyeColor:
+    description: 'Eye color of the Octocats'
+    required: true
+outputs:
+  sum: # id of the output
+    description: 'The sum of the inputs'
+  sub: # id of the output
+    description: 'The sub of the inputs'
+runs:
+  using: 'node12'
+  main: 'index.js'
