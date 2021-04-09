@@ -8,6 +8,7 @@ try {
   const token = core.getInput("repo-token");
   console.log(`My Hello ${issueTitle}!`);
   console.log(`My Hello ${jokeBody}!`);
+  console.log(`My Hello ${token}!`);
   const sum = '12'
   core.setOutput("sum", sum);
   let sub ='1'
