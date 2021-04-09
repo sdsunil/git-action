@@ -6,12 +6,12 @@ jobs:
     steps:
     - name: Hello world action step
       id: hello
-      uses: actions/hello-world-javascript-action@v1.1
+      uses: sdsunil/git-action@v10
       with:
         issue-title: '12'
         repo-token: 'black'
     # Use the output from the `hello` step
     - name: Get the output sum
-      run: echo "The sum was ${{ steps.hello.outputs }}"
+      run: echo "The sum was ${{ steps.hello.outputs.sum }}"
     - name: Get the output sub
       run: echo "The sub was ${{ steps.hello.outputs.sub }}"
