@@ -10,6 +10,7 @@ jobs:
       with:
         issue-title: '12'
         repo-token: 'black'
+        one-more: 'yes'
     # Use the output from the `hello` step
     - name: Get the output sum
       run: echo "The sum was ${{ steps.hello.outputs.sum }}"

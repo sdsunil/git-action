@@ -6,9 +6,11 @@ try {
   const issueTitle = core.getInput("issue-title");
   const jokeBody = core.getInput("joke");
   const token = core.getInput("repo-token");
+  const oneMore = core.getInput("one-more");
   console.log(`My Hello ${issueTitle}!`);
   console.log(`My Hello ${jokeBody}!`);
   console.log(`My Hello ${token}!`);
+  console.log(`OneMore: ${oneMore}!`);
   const sum = '12'
   core.setOutput("sum", sum);
   let sub ='1'
